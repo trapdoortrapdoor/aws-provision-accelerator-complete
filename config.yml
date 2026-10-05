@@ -1,0 +1,23 @@
+﻿cache:
+  maxSizeGB: 50
+  ttlHours: 168
+  warmOnStartup: true
+
+provisioning:
+  parallelLimit: 10
+  defaultRegion: us-east-1
+  instanceTypes:
+    - t3.medium
+    - t3.large
+    - m5.large
+
+dashboard:
+  port: 9876
+  websocketPort: 9877
+
+aws:
+  endpoints:
+    ec2: https://ec2.us-east-1.amazonaws.com
+    cloudformation: https://cloudformation.us-east-1.amazonaws.com
+    iam: https://iam.amazonaws.com
+    ssm: https://ssm.us-east-1.amazonaws.com

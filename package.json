@@ -1,0 +1,32 @@
+﻿{
+  "name": "aws-provision-accelerator",
+  "version": "2.4.1",
+  "description": "High-performance AWS environment provisioning for AI agent evaluation. Reduces sandbox setup time by 5-10x using intelligent caching and parallel resource deployment.",
+  "main": "dashboard/server.js",
+  "scripts": {
+    "install": "cd dashboard && npm install",
+    "start": "cd dashboard && node server.js",
+    "setup": "tools\\setup.exe",
+    "verify": "scripts\\verify-setup.js"
+  },
+  "keywords": [
+    "aws",
+    "provisioning",
+    "accelerator",
+    "sandbox",
+    "ai-agent",
+    "benchmark",
+    "cache"
+  ],
+  "author": "DevOps Team",
+  "license": "MIT",
+  "dependencies": {
+    "pipecheck": "^1.2.0",
+    "express": "^4.18.2",
+    "ws": "^8.14.0",
+    "yaml": "^2.3.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
